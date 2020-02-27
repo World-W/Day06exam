@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center">
+    <TextView
+        android:textSize="25dp"
+        android:text="维度电商"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+    <com.stx.xhb.xbanner.XBanner
+        android:layout_width="match_parent"
+        android:layout_height="160dp"></com.stx.xhb.xbanner.XBanner>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="50dp">
+        <TextView
+            android:text="热销新品"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+
+        android:id="@+id/vp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:gravity="center"
+                android:text="主页"
+                android:button="@null"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:gravity="center"
+                android:text="浏览器"
+                android:button="@null"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:gravity="center"
+                android:text="购物车"
+                android:button="@null"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:gravity="center"
+                android:text="订单"
+                android:button="@null"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:gravity="center"
+                android:text="我的"
+                android:button="@null"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>
